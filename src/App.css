@@ -1,0 +1,98 @@
+ /* Base styles remain unchanged */
+.container {
+   border: 1px solid black;
+   width: 50vw;
+   min-height: 50vh;
+   box-shadow: 4px 2px 2px 2px black;
+   border-radius: 12px;
+}
+
+.displayInput {
+   margin-top: 20px;
+   padding: 20px;
+   font-size: large;
+   background-color: rgb(34, 31, 31);
+   color: white;
+   height: 55px;
+   width: 100%; /* Adjusted for better responsiveness */
+   border: 1px solid white;
+   border-radius: 10px;
+}
+
+.displayInput:focus {
+   background-color: rgb(34, 31, 31);
+   color: white;
+}
+
+.ButtonContainer {
+   min-height: 40vh;
+   width: 100%; /* Adjusted for responsiveness */
+   max-width: 400px; /* Limits the size on larger screens */
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 10px;
+}
+
+.Buttons {
+   width: 59px;
+   height: 55px;
+   margin: 15px;
+   margin-right: 18px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: none;
+   background-color: rgb(34, 31, 31);
+   color: white;
+   border-radius: 15px;
+   border: 1px solid white;
+}
+
+.Buttons:hover {
+   scale: 1.1;
+   background-color: rgb(34, 31, 31);
+   color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+   .container {
+       width: 80vw;
+       min-height: 60vh;
+   }
+
+   .ButtonContainer {
+       width: 90%;
+       min-height: auto;
+       margin-top: 20px;
+   }
+
+   .Buttons {
+       width: 50px;
+       height: 50px;
+       margin: 10px;
+       font-size: smaller;
+   }
+}
+
+@media (max-width: 480px) {
+   .container {
+       width: 95vw;
+       min-height: 70vh;
+   }
+
+   .displayInput {
+       font-size: medium;
+       padding: 15px;
+       height: 50px;
+   }
+
+   .ButtonContainer {
+       width: 100%;
+   }
+
+   .Buttons {
+       width: 45px;
+       height: 45px;
+       margin: 8px;
+       font-size: small;
+   }
+}
